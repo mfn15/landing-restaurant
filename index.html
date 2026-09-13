@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olive &amp; Ember -- Modern Mediterranean Kitchen</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <span class="logo">Olive &amp; Ember</span>
+    <nav class="nav-links" id="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#about">Our Story</a>
+      <a href="#hours">Hours</a>
+      <a href="#reserve" class="nav-cta">Reserve a Table</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">Modern Mediterranean Kitchen</p>
+    <h1>Simple ingredients. Serious flavor.</h1>
+    <p class="hero-sub">Wood-fired mains, small plates built for sharing, and a wine list chosen to match. Open nightly in the heart of downtown.</p>
+    <div class="hero-actions">
+      <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+      <a href="#menu" class="btn btn-ghost">View Menu</a>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="section">
+  <div class="container">
+    <h2 class="section-title">A taste of the menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-top"><h3>Charred Octopus</h3><span class="price">$22</span></div>
+        <p>Smoked paprika, white bean puree, salsa verde.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-top"><h3>Wood-Fired Branzino</h3><span class="price">$34</span></div>
+        <p>Whole roasted, lemon, capers, charred fennel.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-top"><h3>Lamb Kofta</h3><span class="price">$28</span></div>
+        <p>Cumin, sumac onions, garlic yogurt, flatbread.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-top"><h3>Roasted Beet Salad</h3><span class="price">$16</span></div>
+        <p>Whipped feta, pistachio, honey, mint.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-top"><h3>Saffron Risotto</h3><span class="price">$26</span></div>
+        <p>Parmesan, brown butter, crispy leeks.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-top"><h3>Baklava</h3><span class="price">$10</span></div>
+        <p>Pistachio, honey, orange blossom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section section-alt">
+  <div class="container about-inner">
+    <div class="about-photo" aria-hidden="true"></div>
+    <div>
+      <h2 class="section-title">Our story</h2>
+      <p>Olive &amp; Ember started as a single wood-fired grill at a weekend market. Ten years later, the fire's still the center of the kitchen -- every dish on the menu passes through it, from the vegetables to the whole roasted fish.</p>
+      <p>We work directly with three local farms for produce, and change the menu with the seasons rather than forcing ingredients into dishes that want to be made another time of year.</p>
+    </div>
+  </div>
+</section>
+
+<section id="hours" class="section">
+  <div class="container hours-inner">
+    <div>
+      <h2 class="section-title">Hours &amp; Location</h2>
+      <ul class="hours-list">
+        <li><span>Mon -- Thu</span><span>5:00 PM -- 10:00 PM</span></li>
+        <li><span>Fri -- Sat</span><span>5:00 PM -- 11:30 PM</span></li>
+        <li><span>Sunday</span><span>Closed</span></li>
+      </ul>
+      <p class="address">214 Harbor Street, Riverside District</p>
+    </div>
+    <div class="map-placeholder" aria-hidden="true">Map</div>
+  </div>
+</section>
+
+<section id="reserve" class="section section-cta">
+  <div class="container cta-inner">
+    <h2>Reserve a table</h2>
+    <p>For parties of 8 or more, please call us directly at (555) 019-2244.</p>
+    <form class="reserve-form" onsubmit="event.preventDefault(); alert('Thanks! This is a demo form -- wire it up to your reservation system.');">
+      <input type="text" placeholder="Full name" required>
+      <input type="tel" placeholder="Phone number" required>
+      <input type="date" required>
+      <select required>
+        <option value="" disabled selected>Party size</option>
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Request Reservation</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>&copy; 2026 Olive &amp; Ember. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#about">Our Story</a>
+      <a href="#hours">Hours</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
